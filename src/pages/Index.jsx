@@ -6,7 +6,7 @@ const Index = () => {
     <Box>
       <Flex as="header" justifyContent="space-between" p={4} bg="gray.100">
         <Heading size="lg">GPT Engineer</Heading>
-        <Box>
+        <Box display="flex" justifyContent="space-between">
           <Link href="#about" p={2}>About</Link>
           <Link href="#projects" p={2}>Projects</Link>
           <Link href="#contact" p={2}>Contact</Link>
