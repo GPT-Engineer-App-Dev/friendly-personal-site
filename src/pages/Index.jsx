@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } 
 const Index = () => {
   return (
     <Box>
-      <Flex as="header" justifyContent="space-between" p={4} bg="gray.100">
+      <Flex as="header" justifyContent="space-between" p={4} bg="gray.100" minHeight="60px" alignItems="center">
         <Heading size="lg">GPT Engineer</Heading>
         <Box display="flex" justifyContent="space-between">
           <Link href="#about" p={2}>About</Link>
@@ -31,7 +31,7 @@ const Index = () => {
           <Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
         </VStack>
       </Box>
-      <Box as="footer" p={4} bg="gray.100" mt={4}>
+      <Flex as="footer" p={4} bg="gray.100" mt={4} position="absolute" bottom="0" width="100%">
         <Flex justifyContent="space-between" alignItems="center">
           <Text>© 2023 GPT Engineer. All rights reserved.</Text>
           <Link href="#privacy-policy" p={2}>Privacy Policy</Link>
@@ -41,7 +41,7 @@ const Index = () => {
             <Button as="a" href="https://instagram.com" aria-label="Instagram" leftIcon={<FaInstagram />}></Button>
           </HStack>
         </Flex>
-      </Box>
+      </Flex>
     </Box>
   );
 };
