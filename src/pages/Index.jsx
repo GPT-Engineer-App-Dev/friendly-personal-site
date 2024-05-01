@@ -1,5 +1,5 @@
-import { Box, Flex, Text, Heading, VStack, Button, Link } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { Box, Flex, Text, Heading, VStack, Button, Link, HStack } from '@chakra-ui/react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Index = () => {
   return (
@@ -30,6 +30,17 @@ const Index = () => {
           <Button leftIcon={<FaGithub />}>GitHub</Button>
           <Button leftIcon={<FaLinkedin />}>LinkedIn</Button>
         </VStack>
+      </Box>
+      <Box as="footer" p={4} bg="gray.100" mt={4}>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text>© 2023 GPT Engineer. All rights reserved.</Text>
+          <Link href="#privacy-policy" p={2}>Privacy Policy</Link>
+          <HStack spacing={4}>
+            <Button as="a" href="https://facebook.com" aria-label="Facebook" leftIcon={<FaFacebook />}></Button>
+            <Button as="a" href="https://twitter.com" aria-label="Twitter" leftIcon={<FaTwitter />}></Button>
+            <Button as="a" href="https://instagram.com" aria-label="Instagram" leftIcon={<FaInstagram />}></Button>
+          </HStack>
+        </Flex>
       </Box>
     </Box>
   );
